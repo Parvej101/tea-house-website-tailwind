@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea-house-tailwind</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5fedd33746.js" crossorigin="anonymous"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <main class="max-w-screen-xl mx-auto p-16 lg:px-28 border border-green-700">
+        <header class="md:flex pt-10 mb-4 border border-red-700">
+           <!-- text info -->
+            <div>
+                <h1 class="text-5xl md:text-7xl mb-4">It's good <br>
+                    tea time at The <br>
+                     Tea House</h1>
+                     <p class="text-gray-600 w-3/4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                     <button class="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 rounded-lg text-white">Explore Me <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
+            </div>
+            <!-- image info -->
+            <div class="relative">
+              <img class="w-full" src="images/banner.png" alt="">
+              <!-- card -->
+              <div class="absolute top-28 md:top-80 md:left-32 lg:top rounded-xl flex items-center bg-white shadow-lg px-4 py-4 md:px-10 lg:px15">
+                <!-- icon -->
+                 <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+                 <!-- text -->
+                  <div class="ml-2">
+                    <h2 class="lg:text-2xl font-bold">5.00</h2>
+                    <p class="text-gray-500">Trust Pilot Rating</p>
+                  </div>
+                
+              </div>
+            </div>
+
+        </header>
+        <section class="mb-8">
+          <h2 class="text-3xl md:5xl mb-4 font-bold text-center">Our Featured Products</h2>
+          <p class="text-gray-600 mx-auto max-w-xl text-center mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          <!-- grid card -->
+           <div class="grid md:grid-cols-4 gap-4 text-center">
+            <div class="rounded-lg shadow-lg bg-gray-50 overflow-hidden">
+              <img class="mx-auto pt-5" src="images/tea-1.png" alt="">
+             <div class="p-4">
+              <h1 class="text-xl font-bold">Milk Tea</h1>
+              <p>Creamer could be replaced by fresh milk</p>
+             </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-gray-50 overflow-hidden">
+              <img class="mx-auto pt-5" src="images/tea-2.png" alt="">
+             <div class="p-4">
+              <h1 class="text-xl font-bold">Milk Tea</h1>
+              <p>Creamer could be replaced by fresh milk</p>
+             </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-gray-50 overflow-hidden">
+              <img class="mx-auto pt-5" src="images/tea-3.png" alt="">
+             <div class="p-4">
+              <h1 class="text-xl font-bold">Milk Tea</h1>
+              <p>Creamer could be replaced by fresh milk</p>
+             </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-gray-50 overflow-hidden">
+              <img class="mx-auto pt-5" src="images/tea-4.png" alt="">
+             <div class="p-4">
+              <h1 class="text-xl font-bold">Milk Tea</h1>
+              <p>Creamer could be replaced by fresh milk</p>
+             </div>
+            </div>
+
+           </div>
+           
+        </section>
+    </main>
 </body>
 </html>
